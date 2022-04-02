@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="quiz-estilo.css">
+</head>
+<body>
+    <fieldset class="inicial">
+        <h1>QUIZ DE FUTEBOL</h1>
+        <h4>Role para baixo para começar</h4>
+
+        <div id="bola-futebol">
+            <img src="img-quiz/bola-futebol.png" alt="">
+        </div>
+    </fieldset>
+    
+
+    <fieldset class="pergunta-1">
+        <h2>1- Qual país é o maior ganhador de Copa do mundo?</h2>
+        <img src="img-quiz/taca-copa-mundo.png" alt="">
+        <fieldset class="caixa-perguntas-1">
+            <input type="radio" name="qst-1" id="brasil">Brasil
+        <input type="radio" name="qst-1" id="alemanha">Alemanha
+        <input type="radio" name="qst-1" id="franca"> França
+        <input type="radio" name="qst-1" id="belgica"> Belgica
+        <input type="button" value="Confirmar" id="botao"  onclick="verificar()">
+        </fieldset>
+        
+        <div id="res-1"><p>Resposta:</p></div>
+    </fieldset>
+    
+    <!--PERGUNTA 2-->
+    <fieldset class="pergunta-2">
+        <h2>2- Qual é o clube que mais vezes ganhou a Champions League?</h2>
+        <img src="img-quiz/taca-champions.png" alt="">
+        <fieldset class="caixa-perguntas-2">
+            <input type="radio" name="qst-2" id="liverpool"> Liverpool
+            <input type="radio" name="qst-2" id="chelsea"> Chelsea
+            <input type="radio" name="qst-2" id="realmadrid"> Real Madrid
+            <input type="radio" name="qst-2" id="arsenal"> Arsenal
+            <input type="button" value="Confirmar" id="botao2" onclick="calcular()">
+        </fieldset>
+
+        <div id="res-2"><p>Resposta:</p></div>
+    </fieldset>
+
+    <!--PERGUNTA 3-->
+    <fieldset class="pergunta-3">
+        <h2>3- Qual clube ganhou o campeonato brasileiro da série A em 2021</h2>
+        <img src="img-quiz/taca-brasileirao.png" alt="">
+        <fieldset class="caixa-perguntas-3">
+            <input type="radio" name="qst-3" id="flamengo"> Flamengo
+            <input type="radio" name="qst-3" id="atleticomineiro"> Atlético Mineiro
+            <input type="radio" name="qst-3" id="corinthians"> Corinthians
+            <input type="radio" name="qst-3" id="palmeiras"> Palmeiras
+            <input type="button" value="Confirmar" id="botao3" onclick="informar()">
+        </fieldset>
+
+        <div id="res-3"><p>Resposta:</p></div>
+    </fieldset>
+
+    <!--PERGUNTA 4-->
+    <fieldset class="pergunta-4">
+        <h2>4- Qual jogadora é conhecida como a "Rainha do futebol"?</h2>
+        <img src="img-quiz/taca-the-best.png" alt="">
+        <fieldset class="caixa-perguntas-4">
+        <input type="radio" name="qst-4" id="cristiane"> Cristiane Rozeira
+        <input type="radio" name="qst-4" id="formiga"> Formiga
+        <input type="radio" name="qst-4" id="marta"> Marta Vieira
+        <input type="radio" name="qst-4" id="megan"> Megan Rapinoe
+        <input type="button" value="Confirmar"  id="botao4" onclick="mostrar()">
+        </fieldset>
+        
+    </fieldset>
+
+    <div id="res-4"><p>Resposta:</p></div>
+    <script src="quiz-js.js"></script>
+</body>
+</html>
